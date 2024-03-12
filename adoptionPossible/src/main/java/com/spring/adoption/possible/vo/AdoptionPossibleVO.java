@@ -35,7 +35,7 @@ public class AdoptionPossibleVO  {
 	private String adoptionStatus="";
 	private String adoptionLevel="";
 	private String adoptionPasswd="";
-	private String adminId;
+	private String adminId="";
 
 	private int centerId=0;
 	private String centerName="";

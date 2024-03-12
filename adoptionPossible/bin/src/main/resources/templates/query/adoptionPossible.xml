@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.spring.adoption.possible.dao.AdoptionPossibleDAO">
-	<resultMap type="adoptionPossible" id="adoptionPossibleMap">	
+	<resultMap type="adoptionPossible" id="adoptionPossibleMap">
 		
+		<id column="adoption_id" property="adoptionId"/>
+		<result column="adoption_content" property="adoptionContent"/>
+		<result column="adoption_date" property="adoptionDate"/>
+		<result column="adoption_title" property="adoption_title"/>
+		<result column="adoption_cnt" property="adoptionCnt"/>
+		<result column="adoption_status" property="adoptionStatus"/>
+		<result column="adoption_level" property="adoptionLevel"/>
+		<result column="adoption_file" property="adoptionFile"/>
+		<result column="adoption_passwd" property="adoptionPasswd"/>
 		
 		<result column="animal_id" property="animalId"/>
 		<result column="animal_species" property="animalSpecies"/>
@@ -29,26 +38,7 @@
 		
 		<result column="admin_id" property="adminId"/>
 		<result column="admin_pwd" property="adminPwd"/>
-		
-		<result column="adoption_id" property="adoptionId"/>
-		<result column="adoption_content" property="adoptionContent"/>
-		<result column="adoption_date" property="adoptionDate"/>
-		<result column="adoption_title" property="adoption_title"/>
-		<result column="adoption_cnt" property="adoptionCnt"/>
-		<result column="adoption_status" property="adoptionStatus"/>
-		<result column="adoption_level" property="adoptionLevel"/>
-		<result column="adoption_file" property="adoptionFile"/>
-		<result column="adoption_passwd" property="adoptionPasswd"/>
-		
 	</resultMap>
-	
-	<select id="apList" parameterType="adoptionPossible" resultMap="adoptionPossibleMap">
-		SELECT animal_id, animal_species, animal_name, animal_gender, animal_status,
-       animal_kg, animal_color, animal_temp, readcnt,
-       TO_CHAR(animal_regist, 'YYYY-MM-DD') AS animal_regist, animal_file
-		FROM animal
-		WHERE animal_temp LIKE '1%'
-	</select>
 	
 	
 	<update id="readCntUpdate" parameterType="adoptionPossible">
