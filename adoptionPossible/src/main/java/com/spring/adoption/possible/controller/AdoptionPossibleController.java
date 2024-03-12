@@ -32,4 +32,15 @@ public class AdoptionPossibleController {
 		return "poject/adoption/possible/adoptionPossible";
 		
 	}
+	
+	@GetMapping("/apDetail")
+	public String apDetail(@ModelAttribute AdoptionPossibleVO apvo, Model model) {
+	log.info("adoptionPossible 호출 성공");
+	
+	AdoptionPossibleVO detail = adoptionPossibleService.apDetail(apvo);
+	model.addAttribute("detail", detail);
+	
+	return "poject/adoption/possible/adoptionPossible";
+	
+	}
 }
