@@ -29,7 +29,7 @@ public class AdoptionPossibleController {
 		
 		List<AdoptionPossibleVO>apList = adoptionPossibleService.apList(apvo);
 		model.addAttribute("apList", apList);
-		return "poject/adoption/adoptionPossibleList";
+		return "project/adoption/adoptionPossibleList";
 		
 	}
 	
@@ -40,7 +40,7 @@ public class AdoptionPossibleController {
 	AdoptionPossibleVO detail = adoptionPossibleService.apDetail(apvo);
 	model.addAttribute("detail", detail);
 	
-	return "poject/adoption/adoptionPossibleDetail";
+	return "project/adoption/adoptionPossibleDetail";
 	
 	}
 }

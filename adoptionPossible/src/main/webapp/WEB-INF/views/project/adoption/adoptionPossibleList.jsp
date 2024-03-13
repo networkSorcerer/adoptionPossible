@@ -3,11 +3,11 @@
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
 <body>
 	<div class ="container">
-		<div class="text-center"><h3>동물 리스트</h3></div>
+		<div class="text-center"><h3>입양 가능 동물 리스트</h3></div>
 		
 		<div id="animalSearch" class="text-right"></div>
 		
-		<div id="animalList">
+		<div id="apList">
 			<table summary="게시판 리스트" class="table table-striped">
 				<thead>
 					<tr class="text-center">
@@ -25,8 +25,8 @@
 				</thead>
 				<tbody id="list">
 					<c:choose>
-						<c:when test="${not empty animalList }">
-							<c:forEach var="animal" items="${animalList }" varStatus="status">
+						<c:when test="${not empty apList }">
+							<c:forEach var="animal" items="${apList }" varStatus="status">
 								<tr class = "text-center id" data-num="${ animal.animalId}">
 									
 									<td>${animal.animalId}</td>
@@ -64,5 +64,5 @@
 		</div>
 		
 	</div>
-	<script src="/resources/include/js/animalList.js"></script>
+	<script src="/resources/include/js/apList.js"></script>
 </body>
