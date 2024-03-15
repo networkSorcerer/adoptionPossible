@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
 <%@ page trimDirectiveWhitespaces="true" %>
+
 <!DOCTYPE html>
 <html lang="ko">
 	<head>

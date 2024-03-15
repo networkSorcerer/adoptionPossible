@@ -5,14 +5,14 @@ package com.spring.adoption.possible.vo;
 
 import org.springframework.web.multipart.MultipartFile;
 
-
+import com.spring.common.vo.CommonVO;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class AdoptionPossibleVO  {
+public class AdoptionPossibleVO extends CommonVO {
 	private int animalId =0;
 	private String animalSpecies="";
 	private String animalAge="";

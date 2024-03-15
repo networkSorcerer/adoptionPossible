@@ -8,7 +8,7 @@ $(function(){
 		$("#animalId").val(animalId);
 		$("#detailForm").attr({
 			"method":"get",
-			"action":"/animal/animalDetail"
+			"action":"/ap/apDetail"
 		});
 		$("#detailForm").submit();
 	});
@@ -54,7 +54,7 @@ function goPage(){
 	}
 	$("#f_search").attr({
 		"method":"get",
-		"action":"/animal/animalList"
+		"action":"/ap/apList"
 	});
 	$("#f_search").submit();
 }

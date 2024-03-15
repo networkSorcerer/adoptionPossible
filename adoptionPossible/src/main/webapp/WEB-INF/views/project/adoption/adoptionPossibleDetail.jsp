@@ -5,12 +5,6 @@
 	<div class="container">
 		<div class="text-center"><h3>입양 공고 상세 목록</h3></div>
 		
-		<!-- <form name="f_data" id="f_data">
-			<input type="hidden" name="adoptionId" value="${detail.adoptionId }"/>
-			<input type="hidden" name="adoptionFile" id="adoptionFile" value="${detail.adoptionFile}"/>
-		</form> -->
-		
-		
 		<!-- <div class="row text-center mb_2">
 			<div id="pwdChk" class="col-md-9 text-start">	
 				<form name="f_passwdCheck" id="f_passwdCheck" class="row g-3">
@@ -37,9 +31,6 @@
 				<button type="button" id="adoptionListBtn" class="btn btn-success btn-sm">목록</button>
 			</div>
 		</div>
-		
-		
-		<div class="text-center"><h3>동물 리스트 상세 목록</h3></div>
 		
 		<form name="f_data" id="f_data">
 			<input type="hidden" name="animalId" value="${detail.animalId }"/>
@@ -107,6 +98,11 @@
 					</tr>
 				</tbody>
 			</table>
+			
+		<form name="f_data" id="f_data">
+			<input type="hidden" name="adoptionId" value="${detail.adoptionId }"/>
+			<input type="hidden" name="adoptionFile" id="adoptionFile" value="${detail.adoptionFile}"/>
+		</form>
 		
 		<div class="text-center">
 			<table class="table table-bordered">			
